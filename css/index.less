@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+.h3{
+    font-size:16px; font-family: "microsoft yahei"; color:#666; font-weight:bold;
+}
+header{
+    width:100%;
+    div{border-top:1px solid transparent; position:relative;
+        background: url('../images/Jane-_02.gif') no-repeat center top;
+        .nav{width:100%; background:white; margin:80px auto 0; border-bottom:1px solid #f5f5f5;
+            nav{
+                width:1280px;
+                margin:0 auto;
+                height:80px;
+                line-height:80px;
+                ul{
+                    width:660px;
+                    margin:1px auto 0 ;
+                    li{
+                        float: left; width:132px; text-align: center;
+                        a{display: block; font-size:16px; font-family: "microsoft yahei"; color:#333; }
+                    }
+                }   
+            } 
+        }
+        
+        &>ul{
+            position:absolute; width:162px; right:5%; top:104px; background:url('../images/Jane-_06.gif') no-repeat center;
+            li{cursor:pointer; width:27px; float:left; height:29px;}
+        }
+    }
+}
+.scrollNews{height:108px; overflow: hidden;}
+body{overflow-x:hidden;}
+section{
+    width:100%;
+    .container{width:1280px; margin:0 auto;
+        aside{
+            padding:70px 0 0 55px;
+            width:240px;
+            float:left;
+            div{
+                line-height:36px;
+                h3{.h3; 
+                    span{
+                        display:inline-block; text-align:center; font-size:1px; cursor: pointer; width:26px;
+                        line-height:36px; float:right; margin-right:80px; font-weight:normal; font-size:30px;
+                    }
+                }
+                ul li{ text-indent:20px; a{
+                    .h3; display: block; font-weight:normal;
+                    }
+                }
+            }
+        }
+        .main{
+            width:948px; float:left;
+            &>p{padding-top:61px;
+                span{font-family:"microsoft yahei"; font-size:14px; color:#333; line-height:54px;}
+                span:last-of-type{margin-left:66px;  position:relative;}
+                span:last-of-type:after{
+                        content: ''; display: block; position:absolute; top:8px; left:34px;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-top: 5px solid #333;
+                        cursor:pointer;
+                    }
+            }
+            ul li{margin:0 20px 10px 0; float:left;
+                a{width:296px; height:300px; overflow: hidden; display: block; position:relative;
+                    p{
+                        width:275px; height:30px; line-height:30px; position:absolute; bottom:-30px; left:10px;
+                        text-align:center; font-family: "微软雅黑"; font-size:14px; color:#fff;  transition:.4s ease .2s; 
+                    }
+                    
+                } 
+                a:hover p{bottom:10px; }
+                &>p{height:34px; line-height:34px; text-indent:30px; font-family:"microsoft yahei"; font-size:14px; color:#333;
+                    span{float:right; margin-right:36px;}
+                }
+            }
+            .btn{width:928px; height:40px; line-height:40px; text-align:center; background:#E6E6E6; cursor: pointer; font-size:14px; font-family:"microsoft yahei"; color:#666; margin-top:10px; margin-bottom:150px;}
+        }
+    }
+    
+}
+
+footer{width:100%; background:#000;
+    p{width:1280px; margin:0 auto; text-align: center; font-size:14px; font-family: "microsoft yahei"; color:#e5e5e5; height:60px; line-height:60px;}
+}
